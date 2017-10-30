@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Fifteen</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/15.png">
+
+    <link href="style/screen.css" rel="stylesheet" media="(min-width: 700px)"/>
+    <link href="style/small-screen.css" rel="stylesheet" media="(max-width: 700px) and (min-width: 325px)"/>
+    <link href="style/very-small-screen.css" rel="stylesheet" media="(max-width: 325px)"/>
+    <!--Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'><!---for text arisona -->
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'> <!---for text vibes -->
+    <link href='http://fonts.googleapis.com/css?family=Aguafina+Script' rel='stylesheet' type='text/css'> <!--Aguafina Script-->   
+</head>
+
+<body>
+     
+<div id="my-modal" class="modal">
+    <div class="modal-content">
+        <p> Yuhu, You win:)</p>
+        <p id="showResultTime"></p>
+    </div>
+    <canvas id="canv"></canvas>
+</div>
+
+    
+<div class="game">
+
+    <header class="main-header">
+
+        <div id="logotype"><p id="logt">Fifteen</p></div>
+
+        <blockquote>
+            <p id = "cit">The solution of any problem 
+            is reduced to the correct arrangement of numbers.</p>
+        </blockquote>
+
+    </header>
+
+    <section class="content">
+        
+        <form class="main-form">
+            <div id="timer">00:00:00</div>
+
+            <button id="start">Start</button>
+            <button class="level" data-level="3" id = 'active-button' disabled>3 &times; 3</button>
+            <button class="level" data-level="4">4 &times; 4</button>
+            <button class="level" data-level="5">5 &times; 5</button>
+        </form>
+
+        <div id = "block-help">
+            <div id="block-game" class="no-active"> </div>    
+        </div>
+
+    </section>
+
+    <footer class="main-footer">
+        <div>
+            <p> &copy;  2017 by Ruslana Gural.</p>
+        </div>
+    </footer>
+    
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

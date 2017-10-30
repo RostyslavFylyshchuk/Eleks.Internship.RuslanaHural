@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: calc(100% - 1px);
+}
+
+body{
+    background: #ffe3ae;
+}
+
+.game{
+     display: flex;
+     flex-direction: column; 
+     -ms-flex-direction: column;
+     height: 100%;
+}
+
+.content{
+     flex: 1 0 auto;
+     -ms-flex: 1 0 auto;
+     height: 80%;
+}
+
+.main-header{
+    display: inline-flex;
+    width: 100%;
+    height: 10%;
+    background-color: #10ad1b;
+}
+
+.main-footer{
+     flex: 0 0 auto;
+     -ms-flex: 0 0 auto;
+     width: 100%;
+     height: 10%;
+     background-color: #10ad1b;
+     text-align: center;
+}
+
+.main-footer div{
+    margin: 30px auto auto auto;
+    min-width: 0;
+}
+
+.main-footer div p{
+    font: 1em 'Arial', sans-serif;
+}
+
+#logotype{
+    background-color: #89d28e;
+    height: 60%;
+    margin: auto auto auto 20px;
+    width: 220px;
+    padding: 3px;
+    background: radial-gradient(#dfedd6,#10ad1b )
+}
+
+#logt{
+    font: 270% 'Arizonia', Helvetica, sans-serif;
+    color: #2b2b2b;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+    text-align: center;
+}
+
+blockquote{
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 0;
+}
+
+#cit{
+    font: 200% 'Great Vibes', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.main-form{
+    display: inline-flex;
+   /*justify-content: center;*/
+    align-items: center;   
+    width: 100%;
+    height: 10%;
+    background-color: #fefce0;
+    border: 1px dashed #000000;
+}
+
+#timer{
+    font-size: 28px;
+    display: inline-flex;
+    border: 2px solid #fefce0;
+    margin-left: 10%;
+    margin-right: 9.2%;
+    width: 220px;
+    height: 80%;
+    background-color: #fef67f;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center; 
+}
+
+button{
+    font: 130% 'Aguafina Script',Helvetica, sans-serif;
+    text-align: center;
+    height: 65px;  
+    width: 65px;
+    padding: auto 20%; 
+    margin: 3%;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.25), 
+    inset 0 2px 0 rgba(255,255,255,0.6);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.25), 
+    inset 0 2px 0 rgba(255,255,255,0.6),
+    0 2px 0 rgba(0,0,0,0.1),
+    inset 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 
+    0 2px 0 rgba(255,255,255,0.4),
+    inset 0 2px 0 rgba(0,0,0,0.1);
+}
+
+button:hover{
+    background-color: #f2c9fb;;
+}
+
+#start{
+    background-color:#d7eb5a;
+}
+
+.level{
+    background-color: #f6cef5;
+}
+
+#block-help{
+    display: inline-flex;
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#block-game{
+    display: inline-flex;
+    width: 600px;
+    height:600px;
+   /* margin:1% 34%;   */
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    border: 1px solid #000;
+    position: fixed;
+    cursor: pointer;
+}
+
+.no-active{
+    opacity: 0.5;
+    pointer-events: none; 
+}
+
+.butt {
+    display: inline-flex;    
+    background-color: #aedd94;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+
+#zero{
+    background-color: #e2ee79;
+    border: 1px solid #000;
+}
+
+#active-button{
+    box-shadow: 0px 0px 10px 7px #F2E0F7;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-image: linear-gradient(to top, #5D6821 -10%, #C3D468 20%, #D9E29D 80%, #fefefe 105%);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    border-radius: 50px;
+}
+
+.modal-content p{
+    font: 2.5em 'Arizonia', Helvetica, sans-serif;
+    text-align: center;
+}
+
+canvas{
+    display: none;
+    filter: blur(1px);
+}
